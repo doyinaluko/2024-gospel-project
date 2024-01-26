@@ -27,6 +27,10 @@ body{
     background-color: rgb(161, 153, 153);
 }
 
+.logo img{
+    vertical-align: middle;
+}
+
 .header img{
     height: 3rem;
 }
@@ -37,6 +41,7 @@ body{
     font-size: 1.875rem;
     font-weight: 500;
     line-height: 1.2;
+    vertical-align: middle;
 }
 
 
