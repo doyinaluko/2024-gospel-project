@@ -1,11 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
+    position: relative;
     font-size: 14px;
     background: #dfdbdb;
     margin: 0;
-}
-
-*{
-    box-sizing: border-box;
+    /* display: grid;
+    grid-template-rows: 4rem auto fit-content(8rem);
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"; */
+    /* padding-top: 3.5rem; */
+    height: 100vh;
 }
 
 .section{
@@ -14,6 +23,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 4.5rem;
 }
 
 .header{
@@ -26,6 +36,9 @@ body{
     z-index: 1;
     background-color: rgb(161, 153, 153);
     box-shadow: 0 0 0 3px rgba(33, 26, 26, 0.5);
+    top: 0;
+    left: 0;
+    margin-bottom: 2rem;
 }
 
 .logo img{
@@ -46,7 +59,16 @@ body{
     vertical-align: middle;
 }
 
+.main-content{
+    grid-area: main;
+}
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+}
 
 @media screen and (min-width: 48rem) and (max-width: 68.75rem) {
 
